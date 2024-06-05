@@ -1,4 +1,5 @@
 # TokenBroker
+
 TokenBroker is a tool that listens to callbacks from Microsoft OAuth applications, generates an access_token, saves it to disk, notifies the operator, and passes the token to other tools.
 
 # How does it work?
@@ -51,7 +52,7 @@ And if you need to use the captured token by other tools, you can set `POST_TOKE
 
 After editing `config.py` you are now ready TokenBroker.
 
-To view TokenBroker options, you can simply pass `-h` to `TokenProker.py` as the followihg:
+To view TokenBroker options, you can simply pass `-h` to `TokenProker.py` as the following:
 
 ```
  /opt/red/TokenBroker  main !1 ?4  python3 TokenBroker.py -h              ✔ 
@@ -82,14 +83,8 @@ options:
  /opt/redteaming/TokenBroker  main !1 ?5                                                                                                                  ✔ 
 ```
 
-## Starting TokenBroker without SSL
-
-`python3 TokenBroker.py --host 0.0.0.0 --port 8080`
-
-## Starting TokenBroker with SSL
-
-`python3 TokenBroker.py --host 0.0.0.0 --port 443 --private_key /path/to/priv.key --certificate /path/to/cert.crt`
-
-
 # Resources
 
+* [Protect against consent phishing](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/protect-against-consent-phishing)
+
+* [Compromised and malicious applications investigation](https://learn.microsoft.com/en-us/security/operations/incident-response-playbook-compromised-malicious-app)
